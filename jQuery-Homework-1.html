@@ -10,18 +10,31 @@
 
     function getHeadline() {
       var text = $('h1').text();
-      console.log(text)
+      console.log(text);
 }
 
     function changeHeadlines() {
       var text = $('h1').text('New Headline');
-      console.log(text)
+      console.log(text);
 
       var text = $('h2').text('A wikipedia article');
-      console.log(text)
+      console.log(text);
 }
 
+    function logHeadlines() {
+      $('h1').text();
+      console.log($('h1').text());
 
+      $('h2').text();
+      console.log($('h2').text());
+}
+
+    function swapHeadlines() {
+      var headline = $('h1').text();
+      var subhead =  $('h2').text();
+      $('h1').text(subhead);
+      $('h2').text(headline);
+    }
 
 
 
